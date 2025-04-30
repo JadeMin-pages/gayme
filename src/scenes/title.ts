@@ -12,11 +12,16 @@ export default class TitleScene extends Scene {
 	}
 
 	public create() {
-		const startBtn = this.add.text(this.cameras.main.centerX, this.cameras.main.centerY, "Game Start", {
-			fontSize: "32px",
-			color: "#fff",
-			align: "center",
-		});
+		const startBtn = this.add.text(
+			this.cameras.main.centerX,
+			this.cameras.main.centerY,
+			"Game Start",
+			{
+				fontSize: "32px",
+				color: "#fff",
+				align: "center",
+			}
+		);
 		
 		startBtn.setOrigin(0.5, 0.5);
 		startBtn.setInteractive({ useHandCursor: true });
